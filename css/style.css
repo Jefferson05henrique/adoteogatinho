@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --black: #001219ff;
+--green: #005f73ff;
+--cyan: #0a9396ff;
+--white: #f2f2f2;
+--vanilla: #e9d8a6ff;
+--CorSecundaria: #ee9b00ff;
+--CorPrincipal: #ca6702ff;
+--rust: #bb3e03ff;
+--rufous: #ae2012ff;
+--auburn: #9b2226ff;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--CorSecundaria);
+}
+
+.card:hover {
+    box-shadow: var(--rufous) 5px 7px;
+}
+
+ .card {
+    font-family: "Arima", system-ui;
+    background-color: var(--CorSecundaria);
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: var(--black) 2px 5px;
+    color: var(--white);
+ }
+ .card img {
+    width: 400px;
+    height: 350px;
+ }
+ .card button {
+    background-color: var(--vanilla) ;
+    font-family: "Arima", system-ui;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-bottom-left-radius: 0 0 20px 20px; /* Apenas o canto inferior esquerdo arredondado */
+    font-size: 25px;
+    border: var(--CorPrincipal) 5px;
+ }
+
+ .banner {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    background-color: var(--CorPrincipal);
+}
+
+.banner img {
+    grid-column: 2/6;
+    grid-row: 2/6;
+}
