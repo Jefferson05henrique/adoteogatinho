@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 :root {
+    /* VAriaveis de cor */
     --black: #001219ff;
 --green: #005f73ff;
 --cyan: #0a9396ff;
@@ -11,6 +12,15 @@
 --rust: #bb3e03ff;
 --rufous: #ae2012ff;
 --auburn: #9b2226ff;
+/* variaveis de cor */
+
+
+/* variaveis de fonte */
+ --FontePrincipal: "Arima", system-ui;
+ --FonteGigante: 50px;
+ --fonteMedia:30px;
+ /* variaveis de fonte */
+
 }
 
 
@@ -19,6 +29,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* REPLICANDO BANNER COM FLEX */
+
+.banner2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-color: var(--vanilla);
+}
+
+.t-box {
+    font-family: var(--FontePrincipal);
+}
+
+.banner img {
+}
+
+.t-foco2 {
+    font-size: var(--FonteGigante);
+}
+
+.t-secundario2 {
+    font-size: var(--fonteMedia);
+}
+
+
+
+
+
+
+/* REPLICANDO BANNER COM FLEX */
+
 
 #card-container {
     display: flex;
@@ -31,7 +74,7 @@
 }
 
  .card {
-    font-family: "Arima", system-ui;
+    font-family: var(--FontePrincipal);
     background-color: var(--CorSecundaria);
     width: 420px;
     display: flex;
@@ -57,7 +100,7 @@
     align-items: center;
     margin: 10px;
     border-bottom-left-radius: 0 0 20px 20px; /* Apenas o canto inferior esquerdo arredondado */
-    font-size: 25px;
+    font-size: var(--FonteGigante);
     border: var(--CorPrincipal) 5px;
  }
 
@@ -72,3 +115,20 @@
     grid-column: 2/6;
     grid-row: 2/6;
 }
+
+.banner .t-foco {
+    grid-column: 7/12;
+    grid-row: 2/5;
+    text-align: center;
+    font-family: var(--FontePrincipal);
+    font-size: var(--FonteGigante);
+}
+
+.banner .t-secundario {
+    grid-column: 7/12;
+    grid-row: 5/6;
+    text-align: center;
+    font-family: var(--FontePrincipal);
+    font-size: var(--fonteMedia);
+}
+
