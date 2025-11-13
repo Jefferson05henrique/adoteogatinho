@@ -3,23 +3,23 @@
 :root {
     /* VAriaveis de cor */
     --black: #001219ff;
---green: #005f73ff;
---cyan: #0a9396ff;
---white: #f2f2f2;
---vanilla: #e9d8a6ff;
---CorSecundaria: #ee9b00ff;
---CorPrincipal: #ca6702ff;
---rust: #bb3e03ff;
---rufous: #ae2012ff;
---auburn: #9b2226ff;
-/* variaveis de cor */
+    --green: #005f73ff;
+    --cyan: #0a9396ff;
+    --white: #f2f2f2;
+    --vanilla: #e9d8a6ff;
+    --CorSecundaria: #ee9b00ff;
+    --CorPrincipal: #ca6702ff;
+    --rust: #bb3e03ff;
+    --rufous: #ae2012ff;
+    --auburn: #9b2226ff;
+    /* variaveis de cor */
 
 
-/* variaveis de fonte */
- --FontePrincipal: "Arima", system-ui;
- --FonteGigante: 50px;
- --fonteMedia:30px;
- /* variaveis de fonte */
+    /* variaveis de fonte */
+    --FontePrincipal: "Arima", system-ui;
+    --FonteGigante: 50px;
+    --fonteMedia: 30px;
+    /* variaveis de fonte */
 
 }
 
@@ -45,6 +45,7 @@
 }
 
 .banner img {
+
 }
 
 .t-foco2 {
@@ -73,7 +74,7 @@
     box-shadow: var(--rufous) 5px 7px;
 }
 
- .card {
+.card {
     font-family: var(--FontePrincipal);
     background-color: var(--CorSecundaria);
     width: 420px;
@@ -85,13 +86,15 @@
     border-radius: 20px;
     box-shadow: var(--black) 2px 5px;
     color: var(--white);
- }
- .card img {
+}
+
+.card img {
     width: 400px;
     height: 350px;
- }
- .card button {
-    background-color: var(--vanilla) ;
+}
+
+.card button {
+    background-color: var(--vanilla);
     font-family: "Arima", system-ui;
     width: 400px;
     display: flex;
@@ -99,12 +102,13 @@
     justify-content: space-around;
     align-items: center;
     margin: 10px;
-    border-bottom-left-radius: 0 0 20px 20px; /* Apenas o canto inferior esquerdo arredondado */
+    border-bottom-left-radius: 0 0 20px 20px;
+    /* Apenas o canto inferior esquerdo arredondado */
     font-size: var(--FonteGigante);
     border: var(--CorPrincipal) 5px;
- }
+}
 
- .banner {
+.banner {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(12, 1fr);
@@ -132,3 +136,26 @@
     font-size: var(--fonteMedia);
 }
 
+@media screen and (max-width: 430px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .banner2 {
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .navbar {
+    background-color: chocolate !important;
+   }
+
+}
